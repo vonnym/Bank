@@ -21,7 +21,7 @@ public class AppTest {
        }
 
        @Test
-       public void testGetAccountDetailsByID1() {
+       public void testGetAccountDetailsByID() {
              assertNull(new App().getAccountDetailsByID(567));
        }
        
@@ -38,7 +38,7 @@ public class AppTest {
        }
        
        @Test
-       public void getAccountDetailsByBalance2(){
+       public void getAccountDetailsByBalance(){
              List<Account> actualAccounts=new App().getAccountDetailsByBalance(0.0);
              assertNotNull(actualAccounts);
              assertEquals(App.accounts.size(),actualAccounts.size());
